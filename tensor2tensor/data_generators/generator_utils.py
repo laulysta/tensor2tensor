@@ -354,8 +354,8 @@ def get_or_generate_vocab(data_dir,
 
       compressed_file = maybe_download(tmp_dir, filename, url)
 
-      with tarfile.open(compressed_file, read_type) as corpus_tar:
-        corpus_tar.extractall(tmp_dir)
+      #with tarfile.open(compressed_file, read_type) as corpus_tar:
+      #  corpus_tar.extractall(tmp_dir)
 
       for lang_file in source[1]:
         tf.logging.info("Reading file: %s" % lang_file)
